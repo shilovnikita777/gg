@@ -41,7 +41,7 @@ public class PlayerController : MonoBehaviour
         {
             //rb.AddForce(transform.up * jumpForce ,ForceMode2D.Impulse);
             rb.velocity = Vector2.up * jumpForce;
-            print(transform.up.x * jumpForce);
+            //print(transform.up.x * jumpForce);
         }
     }
 
@@ -56,6 +56,7 @@ public class PlayerController : MonoBehaviour
         else if (facingRight == true && moveVector.x < 0)
         {
             Flip();
+            int a;
         }
     }
 
